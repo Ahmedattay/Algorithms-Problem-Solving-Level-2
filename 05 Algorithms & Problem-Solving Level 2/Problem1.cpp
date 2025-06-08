@@ -2,12 +2,21 @@
 using namespace std;
 int main()
 {
-    cout << "\t\t1\t2\t3\t4\t5\t6\t7\t8\t9\t10\n";
+    int multiplicationTable;
+    cout << "Enter the multiplication table you want to print: ";
+    cin >> multiplicationTable;
+    cout << endl;
+    cout << "\t";
+    for (int i = 1; i <= multiplicationTable; i++)
+    {
+        cout << "\t" << i;
+    }
+    cout << endl;
     cout << "----------------------------------------------------------------------------------------------\n";
-    for (int j = 1; j <= 10; j++)
+    for (int j = 1; j <= multiplicationTable; j++)
     {
         cout << j << "\t|";
-        for (int i = 1; i <= 10; i++)
+        for (int i = 1; i <= multiplicationTable; i++)
         {
             cout << "\t" << j * i;
         }
